@@ -15,20 +15,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('inicio');
-});
+})->name('inicio');
 
 //Novedades editoriales
 Route::get('/acemilas', function () {
     return view('acemilas');
-});
+})->name('acemilas');
 //Contacto
 Route::get('/cajeta', function () {
     return view('cajeta');
-});
+})->name('cajeta');
 //Colaboradores
 Route::get('/establo', function () {
     return view('establo');
-});
+})->name('establo');
 
 //vista individual de colaborador
 Route::get('/establo/{id}', function () {
@@ -39,7 +39,7 @@ Route::get('/establo/{id}', function () {
 //Contenido (blog)
 Route::get('/jocoque', function () {
     return view('jocoque');
-});
+})->name('jocoque');
 
 //vista individual blog
 Route::get('/jocoque/{id}', function () {
